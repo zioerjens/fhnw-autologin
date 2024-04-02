@@ -20,6 +20,17 @@ document.getElementById('username').oninput = () => {
     chrome.storage.sync.set(username);
 }
 
+data = await chrome.storage.sync.get('organization');
+if (data) {
+    document.getElementById('organization').value = data.organization;
+}
+document.getElementById('organization').oninput = () => {
+    const organization = {
+        organization: document.getElementById('organization').value
+    };
+    chrome.storage.sync.set(organization);
+}
+
 fetch("https://www.wiewarm.ch:443/api/v1/temperature.json/17")
     .then((response) => response.json())
     .then(body =>  {

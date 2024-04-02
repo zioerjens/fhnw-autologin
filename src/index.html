@@ -4,30 +4,28 @@
 <head>
     <title>FHNW Autologin Settings</title>
     <meta charset="utf-8">
-    <style>
-        #container {
-            width: 30em;
-            font: black;
-            display: grid;
-            grid-template-columns: auto auto;
-            gap: 0.5em;
-        }
-        
-        p {
-            margin: 0;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="fancy.css" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 </head>
 
 <body>
-    <div id="container">
-        <label for="aaretemp">Aare Bern: </label>
-        <p id="aaretemp">...°C</p>
-        <label for="username">Username</label>
-        <input type="text" name="username" id="username">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
-    </div>
+    <div class="container">
+            <h2 style="color: white;">SwitchAuth Autologin Settings</h2>
+        <div class="container-info">
+            <p>Aare Bern:  <span id="aaretemp" class="me-2">...°C</span></p>
+        </div>
+        <br>
+        <div class="container-input">
+            <div class="input-group">
+                <label class="input-group__label" for="myInput">Username</label>
+                <input type="text" name="username" id="username" class="input-group__input" />
+                <label class="input-group__label" for="myInput">Password</label>
+                <input type="password" name="password" id="password" class="input-group__input" />
+                <label class="input-group__label" for="myInput">Organization</label>
+                <input type="text" name="organization" id="organization" class="input-group__input" />
+              </div>
+        </div>
+      </div>
     <script src="credentials.js" type="module"></script>
 </body>
 

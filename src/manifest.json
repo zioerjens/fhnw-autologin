@@ -15,7 +15,9 @@
             "matches": [    
                 "https://fhnw.login.eduid.ch/idp/profile/SAML2/Redirect*",
                 "https://moodle.fhnw.ch/login/index.php",
-                "https://login.eduid.ch/idp/profile/SAML2/Redirect*"
+                "https://login.eduid.ch/idp/profile/SAML2/Redirect*",
+                "https://moodle.bfh.ch/local/bfh_dual_login/index.php",
+                "https://bfh.login.eduid.ch/idp/profile/SAML2/Redirect*"
             ],
             "js": [
                 "autologin.js"
