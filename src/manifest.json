@@ -1,0 +1,29 @@
+{
+    "name": "FHNW Autologin",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Logs in the switch user automatically with the provided credentials",
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "icons": {
+        "128": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [    
+                "https://fhnw.login.eduid.ch/idp/profile/SAML2/Redirect*",
+                "https://moodle.fhnw.ch/login/index.php",
+                "https://login.eduid.ch/idp/profile/SAML2/Redirect*"
+            ],
+            "js": [
+                "autologin.js"
+            ]
+        }
+    ],
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "FHNW Autologin Settings"
+    }
+}
