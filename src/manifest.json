@@ -7,12 +7,15 @@
         "activeTab",
         "storage"
     ],
+    "background": {
+        "service_worker": "radio.js"
+    },
     "icons": {
         "128": "icon.png"
     },
     "content_scripts": [
         {
-            "matches": [    
+            "matches": [
                 "https://fhnw.login.eduid.ch/idp/profile/SAML2/Redirect*",
                 "https://moodle.fhnw.ch/login/index.php",
                 "https://login.eduid.ch/idp/profile/SAML2/Redirect*",
@@ -25,7 +28,7 @@
             ]
         }
     ],
-    "action":{
+    "action": {
         "default_popup": "index.html",
         "default_title": "FHNW Autologin Settings"
     }

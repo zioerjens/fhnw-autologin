@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FHNW Autologin Radio</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="fancy.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="color: white;">Autologin Radio</h2>
+        <div class="container-info">
+            <p>Aare Bern: <span id="aaretemp" class="me-2">...°C</span></p>
+            <audio id="radioPlayer" preload="none"
+                src="https://radio.garden/api/ara/content/listen/ZcDmIJPt/channel.mp3?r=1&17" autoplay="true" volume=0.1></audio>
+        </div>
+    </div>
+    <script src="radioControl.js"></script>
+</body>
+
+</html>
