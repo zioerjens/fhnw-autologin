@@ -1,5 +1,4 @@
-# FHNW Autologin Chrome Extension
-
+# FHNW / BFH Autologin Chrome Extension
 This extension allowes you to automise your login into Moodle and Switch Auth.
 
 ## Setup
