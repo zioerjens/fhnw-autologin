@@ -9,7 +9,7 @@ This extension allowes you to automise your login into Moodle and Switch Auth.
 4. Click "load unpacked extension"
 5. Choose the downloaded src folder
 6. Et voilà, the plugin should be ready to use
-7. Add your credentials for that to the plugin
+7. Add your credentials to the plugin
 
 ## Supported Organisations
 1. FHNW (input value "fhnw")
