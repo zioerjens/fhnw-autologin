@@ -55,7 +55,7 @@ async function login() {
             const username = await chrome.storage.sync.get('username');
             document.getElementById('username').value = username.username;
             if (!document.getElementById('password')) {
-                document.getElementById('login-button').click();
+                document.getElementById('button-submit').click();
             }
         }
         if (document.getElementById('password') && document.getElementById('password').value == '') {
@@ -63,7 +63,7 @@ async function login() {
             // only set password if its not null
             if (password.password) {
                 document.getElementById('password').value = password.password;
-                document.getElementById('login-button').click();
+                document.getElementById('button-proceed').click();
             }
 
         }
